@@ -1,0 +1,20 @@
+# install = present
+# uninstall = absent
+# update = lates
+
+# ansible <group name> -b -m<module> -a "pkg=httpd state=present"
+
+ansible devlopment -b -m yum -a "pkg=httpd state=present"
+
+ansible devlopment[0] -b -m service -a "name=httpd state=started"
+
+ansible devlopment[-1] -b -m user -a "name=arif"
+    #cat /etc/passwd
+
+ansible all -b -m copy -a "src=filename dest=/tem"
+
+# To see the detail of Node
+
+ansible devlopment -m setup
+
+ansible devlopment -m setup -a "filter=*ipv4*"
