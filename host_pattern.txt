@@ -1,0 +1,11 @@
+# Host pattern
+
+ansible <group name> --list-hosts
+
+ansible devlopment --list-hosts
+
+ansible devlopment[0] --list-hosts
+
+ansible devlopment[-1] --list-hosts
+
+ansible devlopment[0:1] --list-hosts
