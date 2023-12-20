@@ -1,0 +1,8 @@
+--- # this is task playook
+- hosts: devlopment[0]
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+    - name: Install HTTPD on devlopment group in node one
+      action: yum name=httpd state=present
