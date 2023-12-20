@@ -1,0 +1,7 @@
+# ansible <group name> -a<argument> "linux command"
+
+ansible devlopment -a "ls"
+
+ansible devlopment[0] -a "touch file1"
+
+ansible devlopment[-1] -b -a "yum install httpd -y"
