@@ -1,0 +1,7 @@
+--- # This is target playbook
+- hosts: devlopment[0]
+  user: ansible
+  become: yes
+  connection: ssh
+  gather_facts: yes
+
